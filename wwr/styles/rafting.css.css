@@ -1,0 +1,236 @@
+/* Root variables for color scheme */
+:root {
+  --primary-color: #27187E;
+  --secondary-color: #758BFD;
+  --accent1-color: #AEB8FE;
+  --accent2-color: #F1F2F6;
+  --cta-color: #FF5733;
+  --heading-font: 'Jaro', serif;
+  --text-font: 'Quicksand', sans-serif;
+}
+
+/* General styles */
+body {
+  font-family: var(--text-font);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: var(--primary-color);
+}
+
+header {
+  background-color: var(--primary-color);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+header .logo {
+  height: 50px;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  display: block;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1.5rem;
+  border-radius: 10px;
+  font-family: var(--heading-font);
+  font-size: 2rem;
+}
+
+.hero p {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+
+/* Newsletter Section */
+.newsletter {
+  background-color: var(--accent2-color);
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.newsletter h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.newsletter p {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.newsletter form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.newsletter input {
+  width: calc(50% - 10px);
+  padding: 0.5rem;
+  margin: 0.5rem 5px;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+}
+
+.newsletter button {
+  background-color: var(--cta-color);
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Call-to-Action Section */
+.cta {
+  background-color: var(--accent1-color);
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.cta h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.cta p {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.cta-button {
+  background-color: var(--secondary-color);
+  color: white;
+  text-decoration: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Grid Layout Section */
+.grid-offerings {
+  background-color: var(--accent2-color);
+  padding: 2rem;
+  text-align: center;
+}
+
+.grid-offerings h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.grid-item {
+  background-color: white;
+  padding: 1rem;
+  border: 1px solid var(--accent1-color);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.grid-item img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.grid-item h3 {
+  font-family: var(--heading-font);
+  color: var(--secondary-color);
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.grid-item p {
+  font-size: 0.9rem;
+}
+
+/* Footer Social Icons */
+footer .social-icons img {
+  width: 24px;
+  margin: 0 5px;
+}
+
+footer .social-icons a {
+  text-decoration: none;
+}
+
+.client-img {
+  width: 150px; 
+  height: auto; 
+  border-radius: 8px; 
+  margin: 1rem; 
+  float: left; 
+}
+/* Align images to the left with consistent sizing for the Trips page */
+.trip img {
+  width: 150px; 
+  height: auto; 
+  float: left; 
+  margin-right: 1rem; 
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+/* Footer social media icons (consistent with the About page) */
+footer a img {
+  width: 24px; 
+  height: 24px; 
+  margin: 0 5px;
+  display: inline-block;
+  vertical-align: middle; 
+}
+
+
+footer {
+  text-align: center;
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 1rem 0;
+}
+
+footer a {
+  text-decoration: none;
+}
